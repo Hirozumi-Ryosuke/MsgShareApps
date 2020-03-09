@@ -12,65 +12,61 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/btnShowToast"
             android:layout_width="117dp"
             android:layout_height="48dp"
-            android:layout_marginStart="132dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="84dp"
             android:text="Show Toast"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/etUserMessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
             android:ems="10"
             android:hint="Enter your Massage"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="213dp" />
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="176dp" />
 
         <Button
             android:id="@+id/btnSendMsgToNextActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="248dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="292dp"
             android:text="Send Data To Next Activity"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btnShareToOtherApps"
-            android:layout_width="224dp"
-            android:layout_height="40dp"
+            android:layout_width="333dp"
+            android:layout_height="49dp"
             android:text="Share to other Apps"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="384dp"
-            tools:ignore="MissingConstraints" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="116dp" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="315dp" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
+        <Button
+            android:id="@+id/btnRecyclerViewDemo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="20dp" />
+            android:text="Recycler View Demo"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="447dp"
+            tools:ignore="MissingConstraints" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
