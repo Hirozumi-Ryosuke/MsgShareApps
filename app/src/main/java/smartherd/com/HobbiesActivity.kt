@@ -21,9 +21,15 @@ class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerV
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val hobby = hobbies[position]
+        holder.setData(hobby, position)
     }
 
-    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+        fun setData(hobby: Hobby?, pos: Int) {
+            itemView.txvTitle.text = hobby!!.title
+        }
+
+    }
 }
