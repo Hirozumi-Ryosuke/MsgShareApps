@@ -1,13 +1,24 @@
 package smartherd.com
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 
-class HobbiesActivity : AppCompatActivity() {
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hobbies)
+class HobbiesAdapter() : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
+
+    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        TODO("Not yet implemented")
     }
-    
+
+    override fun getItemCount(): Int {
+        TODO("Not yet implemented")
+    }
+
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        TODO("Not yet implemented")
+    }
+
 }
